@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1578771021682.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "0|20|6|0|\n7|16|18|0|\n",
+    "hash" : "0",
+    "id" : "15B9AFE",
+    "lastKnownWriteTime" : 1578864178,
+    "last_content_update" : 1578864178959,
+    "path" : "C:/Users/ryuic/OneDrive/Desktop/HKS/04_Jan2020/DPI-691_ProgramDataforPolicyMaker/Final Project/analysis/child_diff-by-wealth.R",
+    "project_path" : "child_diff-by-wealth.R",
+    "properties" : {
+        "cursorPosition" : "57,59",
+        "scrollLine" : "48"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
