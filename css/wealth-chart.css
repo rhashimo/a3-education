@@ -1,0 +1,56 @@
+.graphic {
+      font-family: sans-serif;
+      color: #333;
+      fill: #333;
+  }
+
+  .hed {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 8px;
+  }
+
+  .dek {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 15px;
+  }
+
+  .footnote {
+      font-size: 12px;
+      color: #999;
+      margin-top: 10px;
+  }
+
+  .footnote a {
+      color: #888;
+      text-decoration: underline dashed;
+  }
+
+  .axis path,
+  .axis line {
+      display: none;
+  }
+
+  .axis text,
+  .column .title {
+      fill: #4c4c4c;
+      font-size: 12px;
+  }
+
+  .bar {
+      fill: steelblue;
+  }
+
+  .column .bar--underlying {
+      fill: #f3f3f3;
+  }
+
+  .label {
+      font-size: 12px;
+      fill: #4c4c4c;
+  }
+
+  .label--white {
+      fill: #fff;
+  }
