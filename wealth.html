@@ -16,6 +16,9 @@
   <!-- Custom styles for this template -->
   <link href="css/simple-sidebar.css" rel="stylesheet">
 
+  <!-- Graph -->
+  <link href="css/wealth-chart.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -62,6 +65,18 @@
         <p>The survey reveals huge educational gaps between rich and poor households, with respect to drop-out rate, public to private school ratio, and learning levels. </p>
 
         <iframe title="Non-enrollment and drop-out are more common among poor children" aria-label="Split Bars" id="datawrapper-chart-NzjJ7" src="//datawrapper.dwcdn.net/NzjJ7/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="290"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+
+        <!-- Graph -->
+        <div class="graphic">
+          <div class="hed">Social network usage by high schoolers</div>
+          <div class="dek">Social network sites used by U.S. high school graduates, by frequency, 2014</div>
+          <svg class="chart"></svg>
+          <div class="footnote">Source: <a href="http://aserpakistan.org/index.php">ASER Pakistan</a>. Author's caluculation.</div>
+        </div>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="scripts/wealth-chart.js"></script>
 
 
       </div>
