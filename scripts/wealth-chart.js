@@ -4,8 +4,6 @@ var wealth_int_type = 'data/wealth_int-type.csv'
 
 function update(input_data){
 
-  d3.selectAll("svg > *").remove();
-
   var formatLabel = function(d) { return d3.format('.0f')(d * 100); };
 
   var margin = { top: 30, right: 10, bottom: 10, left: 65 },
