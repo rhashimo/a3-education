@@ -1,12 +1,17 @@
 // Set dataset
 var wealth_status = 'data/wealth_status.csv'
 var wealth_int_type = 'data/wealth_int-type.csv'
+var wealth_basic = 'data/wealth_basic.csv'
+var wealth_arith = 'data/wealth_arith.csv'
+var wealth_eng = 'data/wealth_eng.csv'
 
 function update(input_data){
 
-  var formatLabel = function(d) { return d3.format('.0f')(d * 100); };
+  d3.select("svg > *").remove();
 
-  var margin = { top: 30, right: 10, bottom: 10, left: 65 },
+  var formatLabel = function(d) { return d3.format('.2f')(d); };
+
+  var margin = { top: 30, right: 10, bottom: 10, left: 100 },
       width = 1000 - margin.left - margin.right,
       height = 200 - margin.top - margin.bottom;
 
@@ -23,12 +28,12 @@ function update(input_data){
       xScale = d3.scaleLinear(),
       xValue = function(d) { return xScale(x(d)); };
 
-  var y = function(d) { return d.social_network; },
+  var y = function(d) { return d.windex; },
       yScale = d3.scaleBand().range([height, 0]).padding(0.1),
       yValue = function(d) { return yScale(y(d)); },
       yAxis = d3.axisLeft(yScale);
 
-  var column = function(d) { return d.usage; },
+  var column = function(d) { return d.category; },
       columnScale = d3.scaleBand().range([0, width]).paddingInner(0.075),
       columnValue = function(d) { return columnScale(column(d)); };
 
@@ -38,8 +43,8 @@ function update(input_data){
 
   function row(d) {
       return {
-          usage: d.usage,
-          social_network: d.social_network,
+          category: d.category,
+          windex: d.windex,
           share: +d.share
       };
   }
@@ -48,16 +53,16 @@ function update(input_data){
       if (error) throw error;
 
       var data = d3.nest()
-          .key(function(d) { return d.usage; })
+          .key(function(d) { return d.category; })
           .entries(dataFlat)
-          .map(function(d) { return { usage: d.key, values: d.values }; });
+          .map(function(d) { return { category: d.key, values: d.values }; });
       
       yScale.domain(dataFlat.map(y).reverse());
       columnScale.domain(dataFlat.map(column));
       xScale.range([0, columnScale.bandwidth()]);
 
       // Excluding the light colors from the color scheme
-      var colorRange = d3.schemeBuPu[columnScale.domain().length + 2].reverse();
+      var colorRange = d3.schemeTableau10;
       colorScale
           .domain(dataFlat.map(color))
           .range(colorRange);
