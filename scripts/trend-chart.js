@@ -5,7 +5,7 @@ var trend_arith = 'data/trend_arith.csv'
 var trend_eng = 'data/trend_eng.csv'
 
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 40, bottom: 30, left: 180},
+var margin = {top: 10, right: 40, bottom: 30, left: 150},
     width = 800 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
 
@@ -119,7 +119,7 @@ function update(input_data){
       .attr("text-anchor", "end")
       .attr("x", -10)
       .attr("y", 5)
-      .text("Province")
+      .text("(Province)")
       .attr("font-size", "13px");
 
     // Handmade legend
