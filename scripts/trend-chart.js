@@ -1,0 +1,146 @@
+// Set dataset
+var trend_enrollment = 'data/trend_enrollment.csv'
+var trend_reading = 'data/trend_reading.csv'
+var trend_arith = 'data/trend_arith.csv'
+var trend_eng = 'data/trend_eng.csv'
+
+// set the dimensions and margins of the graph
+var margin = {top: 10, right: 40, bottom: 30, left: 150},
+    width = 650 - margin.left - margin.right,
+    height = 280 - margin.top - margin.bottom;
+
+var xmin = {enrollment: 70, others: 1}
+    xmax = {enrollment: 100, others: 5}
+
+function update(input_data){
+
+  d3.select("#my_dataviz > *").remove();
+
+  // append the svg object to the body of the page
+  var svg = d3.select("#my_dataviz")
+    .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+  
+  // Parse the Data
+  d3.csv(input_data, function(data) {
+
+    // Add X axis
+    if(input_data == 'data/trend_enrollment.csv'){
+      [xmin, xmax] = [70, 100]
+    }else{[xmin, xmax] = [1, 5]}
+
+    var x = d3.scaleLinear()
+      .domain([xmin, xmax])
+      .range([ 0, width]);
+    svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x))
+
+    // Y axis
+    var y = d3.scaleBand()
+      .range([ 0, height ])
+      .domain(data.map(function(d) { return d.rname; }))
+      .padding(1);
+    svg.append("g")
+      .call(d3.axisLeft(y))
+
+    // Lines
+    svg.selectAll("myline")
+      .data(data)
+      .enter()
+      .append("line")
+        .attr("x1", function(d) { return x(d.year1); })
+        .attr("x2", function(d) { return x(d.year2); })
+        .attr("y1", function(d) { return y(d.rname); })
+        .attr("y2", function(d) { return y(d.rname); })
+        .attr("stroke-width", "1.5px")
+        .style("stroke", function(d){
+          if(d.diff >= 0){
+            return "deepskyblue";
+          } else {return "brown";}
+        });
+
+    // Circles of variable 1
+    svg.selectAll("mycircle")
+      .data(data)
+      .enter()
+      .append("circle")
+        .attr("cx", function(d) { return x(d.year1); })
+        .attr("cy", function(d) { return y(d.rname); })
+        .attr("r", "6")
+        .style("Fill", "#69b3a2")
+
+    // Circles of variable 2
+    svg.selectAll("mycircle")
+      .data(data)
+      .enter()
+      .append("circle")
+        .attr("cx", function(d) { return x(d.year2); })
+        .attr("cy", function(d) { return y(d.rname); })
+        .attr("r", "6")
+        .style("fill", "#4C4082")
+
+    // Labels
+    if(input_data == 'data/trend_enrollment.csv'){
+      suffix = "%"}else{suffix = "P"}
+    svg.selectAll("mytext")
+      .data(data)
+      .enter()
+      .append("text")
+        .attr("x", function(d) { if(d.diff >= 0){
+          return x(d.year2) + 10; }else{ return x(d.year2) - 45;}})
+        .attr("y", function(d) { return y(d.rname) + 5; })
+        .text( function (d) { return d3.format(".1f")(d.diff) + suffix; })
+        .style("font-size", "12px")
+        .style("Fill", function(d){
+          if(d.diff >= 0){
+            return "midnightblue";
+          }else{return "brown";}
+        });
+
+    // Add X axis label:
+    if(input_data == 'data/trend_enrollment.csv'){
+      xlabel = "(%)"}else{xlabel = "(Point)"}
+    svg.append("text")
+      .attr("text-anchor", "end")
+      .attr("x", width)
+      .attr("y", height + margin.top + 18)
+      .text(xlabel)
+      .attr("font-size", "10px");
+
+    // Handmade legend
+    svg.append("circle")
+      .attr("cx",400)
+      .attr("cy",200)
+      .attr("r", 5)
+      .style("fill", "#69b3a2")
+    
+    svg.append("circle")
+      .attr("cx",400)
+      .attr("cy",220)
+      .attr("r", 5)
+      .style("fill", "#4C4082")
+
+    svg.append("text")
+      .attr("x", 410)
+      .attr("y", 204)
+      .text("2016")
+      .style("font-size", "12px")
+      .attr("alignment-baseline","middle")
+
+    svg.append("text")
+      .attr("x", 410)
+      .attr("y", 224)
+      .text("2018")
+      .style("font-size", "12px")
+      .attr("alignment-baseline","middle")
+
+  })
+}
+
+
+update(trend_enrollment)

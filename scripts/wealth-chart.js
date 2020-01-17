@@ -9,7 +9,7 @@ function update(input_data){
 
   d3.select("svg > *").remove();
 
-  var formatLabel = function(d) { return d3.format('.2f')(d); };
+  var formatLabel = function(d) { return d3.format('.1f')(d * 100) + "%"; };
 
   var margin = { top: 30, right: 10, bottom: 10, left: 100 },
       width = 1000 - margin.left - margin.right,
