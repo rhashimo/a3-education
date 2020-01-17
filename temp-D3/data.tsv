@@ -1,7 +1,7 @@
-Absolutes	Total:	Male	Female	Enrolled	Not Enrolled	Punjab 	Sindh	Balochistan	KPK	Gilgit-Baltistan	Kashmir	Islamabad
-Base: All Respondents	6348	3638	2710	1572	1724	1512	945	594	4983	1365	2620	2009
-Right direction	2933	1698	1235	723	775	715	429	291	2392	541	1170	935
-Wrong direction	2200	1340	859	549	607	521	325	197	1623	576	976	683
-Some in right, some in wrong direction (vol.)	1084	531	554	267	307	242	175	93	857	228	425	345
-Refused (vol.)	6	3	3	0	3	3	0	0	5	1	2	3
-Don't know (vol.)	125	65	59	33	32	31	16	13	106	19	47	44
+Absolutes	Male	Female		Enrolled	Not Enrolled	 	Punjab 	Sindh	Balochistan	KPK	Gilgit-Baltistan	Kashmir	Islamabad
+Base: All Respondents	3638	2710		1572	1724		1512	945	594	4983	1365	2620	2009
+Beginner	1698	1235		723	775		715	429	291	2392	541	1170	935
+Reads letters	1340	859		549	607		521	325	197	1623	576	976	683
+Reads words	531	554		267	307		242	175	93	857	228	425	345
+Reads sentences	3	3		0	3		3	0	0	5	1	2	3
+Reads story	65	59		33	32		31	16	13	106	19	47	44

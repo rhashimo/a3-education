@@ -163,16 +163,16 @@ d3.tsv("data.tsv", function(error, data) {
 		.data(colors.domain())
 		.enter().append("g")
 		.attr("class", "legend")
-		.attr("transform", function(d, i) { return "translate(20," + ((height - 18) - (i * 20)) + ")"; });
+		.attr("transform", function(d, i) { return "translate(20," + ((height - 20) - (i * 20)) + ")"; });
 
 	legend.append("rect")
-		.attr("x", width - 18)
+		.attr("x", width - 5)
 		.attr("width", 18)
 		.attr("height", 18)
 		.style("fill", colors);
 
 	legend.append("text")
-		.attr("x", width + 10)
+		.attr("x", width + 15)
 		.attr("y", 9)
 		.attr("dy", ".35em")
 		.style("text-anchor", "start")
