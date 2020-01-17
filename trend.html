@@ -16,6 +16,9 @@
   <!-- Custom styles for this template -->
   <link href="styles/simple-sidebar.css" rel="stylesheet">
 
+  <!-- Graph -->
+  <link href="styles/wealth-chart.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -57,8 +60,26 @@
       </nav>
 
       <div class="container-fluid">
-        <h1 class="mt-4">References</h1>
-        <p>Pakistan is ---.</p>
+        <h1 class="mt-4">Regional Trends?</h1>
+        <p>Write something catchy.</p>
+        <p>Write something catchy. </p>
+
+        <!-- Graph -->
+        <!-- Add 2 buttons -->
+        <button onclick="update(trend_enrollment)">Enrollment</button>
+        <button onclick="update(trend_reading)">Reading Levels</button>
+        <button onclick="update(trend_arith)">Arithmetic Levels</button>
+        <button onclick="update(trend_eng)">English Levels</button>
+
+        <div class="graphic">
+          <div id="my_dataviz"></div>
+          <div class="footnote">Source: <a href="http://aserpakistan.org/index.php">ASER Pakistan</a>. Author's caluculation.</div>
+        </div>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="scripts/trend-chart.js"></script>
+
+
       </div>
     </div>
     <!-- /#page-content-wrapper -->
