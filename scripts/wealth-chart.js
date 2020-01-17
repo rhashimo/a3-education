@@ -11,7 +11,7 @@ function update(input_data){
 
   var formatLabel = function(d) { return d3.format('.1f')(d * 100) + "%"; };
 
-  var margin = { top: 30, right: 10, bottom: 10, left: 100 },
+  var margin = { top: 30, right: 10, bottom: 10, left: 120 },
       width = 1000 - margin.left - margin.right,
       height = 200 - margin.top - margin.bottom;
 
@@ -123,7 +123,11 @@ function update(input_data){
           .enter().append('text') 
               .attr('class', 'label')
               .text(function(d) { return formatLabel(x(d)); })
-              .each(positionLabel);
+              .each(positionLabel);;
+
+      svg.select("g.axis.axis--y")
+        .selectAll("text")
+        .style("font-size","13px");
 
   });
 
