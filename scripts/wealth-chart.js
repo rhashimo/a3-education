@@ -128,7 +128,7 @@ function update(input_data){
       svg.select("g.axis.axis--y")
         .selectAll("text")
         .style("font-size","13px");
-
+        
   });
 
 }
