@@ -61,23 +61,34 @@
         </div>
       </nav>
 
-      <div class="container-fluid">
-        <h1 class="mt-4">Nontrivial Wealth Gap in Educaiton</h1>
-        <p>Many Countries observe wealth gaps in education, and so does Pakistan.</p>
-        <p>The survey reveals huge educational gaps between rich and poor households, with respect to drop-out rate, public to private school ratio, and learning levels. </p>
-
-        <!-- Graph -->
-        <!-- Add 2 buttons -->
-        <button onclick="update(wealth_status)">Educational Status</button>
-        <button onclick="update(wealth_int_type)">School Type</button>
-        <button onclick="update(wealth_basic)">Reading Levels</button>
-        <button onclick="update(wealth_arith)">Arithmetic Levels</button>
-        <button onclick="update(wealth_eng)">English Levels</button>
-
+      <div class="container-fluid", align="center">
+        <h1 class="mt-4">Nontrivial Wealth Gap in Education</h1>
+        <br>
+        <br>
+        <!-- Graphic -->
         <div class="graphic">
+          <div class="hed">Fewer Opportnities, Worse Outcomes</div>
+          
+          <!-- Buttons to choose indicators-->
+          <button onclick="update(wealth_status)">Educational Status</button>
+          <button onclick="update(wealth_int_type)">School Type</button>
+          <button onclick="update(wealth_basic)">Reading Levels</button>
+          <button onclick="update(wealth_arith)">Arithmetic Levels</button>
+          <button onclick="update(wealth_eng)">English Levels</button>
+         
+          <div class="dek">
+              <li id="dek-takeaway" style = "margin-top: 1%">More than one out of five children in poor households cannot attain education.</li>
+          </div>
+
+          <!-- Chart -->
           <svg class="chart"></svg>
           <div class="footnote">Source: <a href="http://aserpakistan.org/index.php">ASER Pakistan</a>. Author's caluculation.</div>
         </div>
+
+<!-- 
+        <li>More than one out of five children in poor households cannot attain education.</li>
+        <li>Tven if they have access to education, as they have less choices over school types, thus their educational outcome are worse than children in richer households.</li>
+         -->
 
         <script src="https://d3js.org/d3.v4.min.js"></script>
         <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>

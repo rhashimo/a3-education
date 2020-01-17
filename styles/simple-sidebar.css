@@ -7,6 +7,15 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  line-height: 80%;
+}
+
+p {
+  font-size: 120%;
+
+}
+
 #sidebar-wrapper {
   min-height: 100vh;
   margin-left: -15rem;
