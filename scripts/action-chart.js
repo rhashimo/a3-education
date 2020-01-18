@@ -145,6 +145,11 @@ function update(input_data){
   }
   document.getElementById("dek-takeaway").innerHTML = takeaways;
 
+  //note about educational status
+  if(input_data == 'data/action-enrollment2.csv' || input_data == 'data/action-enrollment3.csv'){
+    note = "Currently Enrolled (ce); Dropout (do); Never Enrolled (ne)"
+  }else{note = ""}
+  document.getElementById("note-about-status").innerHTML = note;
 }
 
 update(enrollment_status)
