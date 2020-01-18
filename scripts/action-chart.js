@@ -133,15 +133,15 @@ function update(input_data){
 
   //key takeaways from each graph 
   if(input_data == 'data/action-enrollment0.csv'){
-    takeaways = "The national average of enrollment is 71.7%. The provinces below the national average are khyber..."
+    takeaways = "The national average of enrollment is 71.7%. Khyber Pakhtunkhwa and Balochistan are below the national average."
   }else if (input_data == 'data/action-enrollment1.csv'){
-    takeaways = "Only 10% of children in poor households enroll into private schools due to financial reasons."
+    takeaways = "Poverty and migration lead to dropout. The province most affected is Balochistan."
   }else if (input_data == 'data/action-enrollment2.csv'){
-    takeaways = "A considerable amont of poor children can barely read letters in local/national language."
-  }else if (input_data == 'data/enrollment_wealthlevel.csv'){
-    takeaways = "Difference in Arithmatic levels may be less problematic compared to other indicators."
-  }else if (input_data == 'data/enrollment_schooltype.csv'){
-    takeaways = "General tendency in English levels are the same as Reading levels; poor children perfom worse."
+    takeaways = "Among dropouts and children never enrolled in school, the proportion is similar between males and females." 
+  }else if (input_data == 'data/action-enrollment3.csv'){
+    takeaways = "Across Pakistan, non-enrollment for children from the top two and bottom two income levels is relatively the same."
+  }else if (input_data == 'data/action-enrollment4.csv'){
+    takeaways = "The majority of enrolled children attend either government or private schools."
   }
   document.getElementById("dek-takeaway").innerHTML = takeaways;
 
