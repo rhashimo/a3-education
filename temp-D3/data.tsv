@@ -1,7 +1,7 @@
-Absolutes	Male	Female		Enrolled	Not Enrolled	 	Punjab 	Sindh	Balochistan	KPK	Gilgit-Baltistan	Kashmir	Islamabad
-Base: All Respondents	3638	2710		1572	1724		1512	945	594	4983	1365	2620	2009
-Beginner	1698	1235		723	775		715	429	291	2392	541	1170	935
-Reads letters	1340	859		549	607		521	325	197	1623	576	976	683
-Reads words	531	554		267	307		242	175	93	857	228	425	345
-Reads sentences	3	3		0	3		3	0	0	5	1	2	3
-Reads story	65	59		33	32		31	16	13	106	19	47	44
+Absolutes	Male	Female	.	Enrolled	Not Enrolled	 	Punjab 	Sindh	Balochistan	KPK	Gilgit-Baltistan	Kashmir	Islamabad
+Base: All Respondents													
+Beginner	3801	3685		4226	3261		1093	1165	3108	1549	364	141	67
+Reads letters	6618	4689		10307	1000		1434	1859	5251	1867	660	216	20
+Reads words	11877	7719		18862	734		3402	3712	5907	4677	1134	716	48
+Reads sentences	9505	6096		15246	355		3652	2224	3131	4311	1061	1150	72
+Reads story	11899	8035		19662	272		7078	2397	1546	5265	1357	2125	166
