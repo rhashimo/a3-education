@@ -17,7 +17,7 @@
   <link href="styles/simple-sidebar.css" rel="stylesheet">
 
   <!-- Graph -->  
-  <link href="styles/wealth-chart.css" rel="stylesheet">
+  <link href="styles/graphic-styles.css" rel="stylesheet">
 
 </head>
 
@@ -71,26 +71,22 @@
           
           <!-- Buttons to choose indicators-->
           <div class="button">
-            <button onclick="update(wealth_status)">Educational Status</button>
+            <button onclick="update(wealth_status)">Non-enrollment Ratio</button>
             <button onclick="update(wealth_int_type)">School Type</button>
-            <button onclick="update(wealth_basic)">Reading Levels</button>
-            <button onclick="update(wealth_arith)">Arithmetic Levels</button>
-            <button onclick="update(wealth_eng)">English Levels</button>
+            <button onclick="update(wealth_basic)">Reading Level</button>
+            <button onclick="update(wealth_arith)">Arithmetic Level</button>
+            <button onclick="update(wealth_eng)">English Level</button>
           </div>
          
+          <!-- Single bullet point to take away -->
           <div class="dek">
               <li id="dek-takeaway"></li>
           </div>
 
           <!-- Chart -->
           <svg class="chart"></svg>
-          <div class="footnote">Source: <a href="http://aserpakistan.org/index.php">ASER Pakistan</a>. Note: Authors' calculation. The wealth level is determined by the quartile of An assets-based ASER composite wealth index, constructed by ASER, which measures the assets possession and wealth status of a household.</div>
+          <div class="footnote" style="width:1000px">Source: <a href="http://aserpakistan.org/index.php">ASER Pakistan</a>. Dataset: <a href="data/wealth_gap.xlsx">data</a> <br>Note: Authors' calculation. The wealth level is determined by the quartile of An assets-based ASER composite wealth index, which measures the assets possession and wealth status of a household.</div>
         </div>
-
-<!-- 
-        <li>More than one out of five children in poor households cannot attain education.</li>
-        <li>Tven if they have access to education, as they have less choices over school types, thus their educational outcome are worse than children in richer households.</li>
-         -->
 
         <script src="https://d3js.org/d3.v4.min.js"></script>
         <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
