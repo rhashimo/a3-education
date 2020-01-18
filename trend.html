@@ -17,7 +17,7 @@
   <link href="styles/simple-sidebar.css" rel="stylesheet">
 
   <!-- Graph -->
-  <link href="styles/wealth-chart.css" rel="stylesheet">
+  <link href="styles/graphic-styles.css" rel="stylesheet">
 
 </head>
 
@@ -63,20 +63,30 @@
 
       <div class="container-fluid">
         <h1 class="mt-4">Regional Trends?</h1>
-        <p>Write something catchy.</p>
-        <p>Write something catchy. </p>
+        <br>
+        <br>
 
         <!-- Graph -->
-        <!-- Add 2 buttons -->
-        <button onclick="update(trend_enrollment)">Enrollment</button>
-        <button onclick="update(trend_reading)">Reading Levels</button>
-        <button onclick="update(trend_arith)">Arithmetic Levels</button>
-        <button onclick="update(trend_eng)">English Levels</button>
-
         <div class="graphic">
-          <br>
+          <div class="hed">Some Indicators Up, Others Stuck</div>
+          
+          <!-- Buttons to choose indicators-->
+          <div class="button">
+            <button onclick="update(trend_enrollment)">Enrollment Ratio</button>
+            <button onclick="update(trend_reading)">Reading Level</button>
+            <button onclick="update(trend_arith)">Arithmetic Level</button>
+            <button onclick="update(trend_eng)">English Level</button>
+          </div>
+
+          <!-- Single bullet point to take away -->
+          <div class="dek">
+              <li id="dek-takeaway"></li>
+          </div>
+
+          <!-- Chart -->
           <div id="my_dataviz"></div>
-          <div class="footnote">Source: <a href="http://aserpakistan.org/index.php">ASER Pakistan</a>. Author's caluculation.</div>
+          <img src="images/level-point_table.jpeg" style="margin-left: 150px; margin-top: 20px">
+          <div class="footnote">Source: <a href="http://aserpakistan.org/index.php">ASER Pakistan</a>. Dataset: <a href="data/trend.xlsx">data</a> <br>Note: Author's caluculation. Blue lines represent improvements from 2016 to 2018, while red lines indicate declines. For Reading, Arithmetic, and English Levels, see the following Level-Point Conversion Table. For instance, if Reading Level in a province is 2.5 Point, it means an average children in the region can understand letters, but not words.</div>
         </div>
 
         <script src="https://d3js.org/d3.v4.min.js"></script>

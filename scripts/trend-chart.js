@@ -6,8 +6,11 @@ var trend_eng = 'data/trend_eng.csv'
 
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 40, bottom: 30, left: 150},
-    width = 800 - margin.left - margin.right,
+    width = 900 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
+
+var graphic = d3.select('.graphic')
+    .style('width', '900px');
 
 var xmin = {enrollment: 70, others: 1}
     xmax = {enrollment: 100, others: 5}
@@ -31,7 +34,11 @@ function update(input_data){
     // Add X axis
     if(input_data == 'data/trend_enrollment.csv'){
       [xmin, xmax] = [70, 100]
-    }else{[xmin, xmax] = [1, 5]}
+    }else if(input_data == 'data/trend_arith.csv'){
+      [xmin, xmax] = [1, 6]
+    }else{
+      [xmin, xmax] = [1, 5]
+    }
 
     var x = d3.scaleLinear()
       .domain([xmin, xmax])
@@ -104,7 +111,7 @@ function update(input_data){
           }else{return "brown";}
         });
 
-    // Add X axis label:
+    // Add X axis unit:
     if(input_data == 'data/trend_enrollment.csv'){
       xlabel = "(%)"}else{xlabel = "(Point)"}
     svg.append("text")
@@ -114,7 +121,7 @@ function update(input_data){
       .text(xlabel)
       .attr("font-size", "13px");
 
-    // Add Y axis label:
+    // Add Y axis unit:
     svg.append("text")
       .attr("text-anchor", "end")
       .attr("x", -10)
@@ -124,33 +131,48 @@ function update(input_data){
 
     // Handmade legend
     svg.append("circle")
-      .attr("cx",500)
-      .attr("cy",210)
+      .attr("cx",100)
+      .attr("cy",40)
       .attr("r", 5)
       .style("fill", "#69b3a2")
     
     svg.append("circle")
-      .attr("cx",500)
-      .attr("cy",230)
+      .attr("cx",100)
+      .attr("cy",60)
       .attr("r", 5)
       .style("fill", "#4C4082")
 
     svg.append("text")
-      .attr("x", 510)
-      .attr("y", 214)
+      .attr("x", 110)
+      .attr("y", 44)
       .text("2016")
       .style("font-size", "12px")
       .attr("alignment-baseline","middle")
 
     svg.append("text")
-      .attr("x", 510)
-      .attr("y", 234)
+      .attr("x", 110)
+      .attr("y", 64)
       .text("2018")
       .style("font-size", "12px")
       .attr("alignment-baseline","middle")
 
   })
+
+
+  //key takeaways from each graph 
+  if(input_data == 'data/trend_enrollment.csv'){
+    takeaways = "Balochistan had significantly improved its enrollment ratio, but still room for improvement."
+  }else if (input_data == 'data/trend_reading.csv'){
+    takeaways = "Reading level in local/national language had stayed at almost the same level."
+  }else if (input_data == 'data/trend_arith.csv'){
+    takeaways = "All provinces had achieved remarkable improvement on Arithmatic level."
+  }else{
+    takeaways = "English level also stucks; rather, top two provinces observed relatively large decline."
+  }
+  document.getElementById("dek-takeaway").innerHTML = takeaways;
+
 }
+
 
 
 update(trend_enrollment)
