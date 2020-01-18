@@ -1,72 +1,76 @@
 .graphic {
-      font-family: sans-serif;
-      color: #333;
-      fill: #333;
-  }
+    font-family: sans-serif;
+    color: #333;
+    fill: #333;
+}
 
-  .hed {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 8px;
-      text-align: center;
-  }
-
-  .button{
+.hed {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
     text-align: center;
-  }
+}
 
-  .dek {
-      font-size: 16px;
-      color: #555;
-      margin-top: 15px;
-      margin-left: 80px;
-      margin-bottom: 15px;
-  }
+.button{
+  text-align: center;
+}
 
-  .footnote {
-      font-size: 12px;
-      color: #999;
-      margin-top: 10px;
-  }
-
-  .footnote a {
-      color: #888;
-      text-decoration: underline dashed;
-  }
-
-  .table{
+.dek {
+    font-size: 16px;
+    color: #555;
+    margin-top: 15px;
     margin-left: 80px;
-  }
+    margin-bottom: 15px;
+}
 
-  .axis path,
-  .axis line {
-      display: none;
-  }
+.footnote {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+}
 
-  .axis text,
-  .column .title {
-      fill: #4c4c4c;
-      font-size: 12px;
-  }
+.footnote a {
+    color: #888;
+    text-decoration: underline dashed;
+}
 
-  .bar {
-      fill: steelblue;
-  }
+.table{
+  margin-left: 80px;
+}
 
-  .column .bar--underlying {
-      fill: #f3f3f3;
-  }
+.axis path,
+.axis line {
+    display: none;
+}
 
-  .label {
-      font-size: 12px;
-      fill: #4c4c4c;
-  }
+.axis text,
+.column .title {
+    fill: #4c4c4c;
+    font-size: 12px;
+}
 
-  .label--white {
-      fill: #fff;
-  }
+.bar {
+    fill: steelblue;
+}
+
+.column .bar--underlying {
+    fill: #f3f3f3;
+}
+
+.label {
+    font-size: 12px;
+    fill: #4c4c4c;
+}
+
+.label--white {
+    fill: #fff;
+}
 
 /*buttons for switching graphics*/
+.buttons{
+  text-align: center
+}
+
 .btn-pressed{
   background-color: #FFEBCD;
   border: none;
