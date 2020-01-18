@@ -14,70 +14,85 @@
   <link href="bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="styles/simple-sidebar.css" rel="stylesheet">
+  <link href="styles/main-style.css" rel="stylesheet">
 
-  <!-- Graph -->  
+  <!-- Graph -->
   <link href="styles/graphic-styles.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <div class="d-flex" id="wrapper">
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
 
-    <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Education in Pakistan </div>
-      <div class="list-group list-group-flush">
-        <a href="snapshot.html" class="list-group-item list-group-item-action bg-light">Want a Snapshot?</a>
-        <a href="wealth.html" class="list-group-item list-group-item-action bg-light">Does Wealth Matter?</a>
-        <a href="action.html " class="list-group-item list-group-item-action bg-light">Does Location Matter?</a>
-        <a href="trend.html " class="list-group-item list-group-item-action bg-light">Interested in Trends?</a>
-        <a href="reference.html" class="list-group-item list-group-item-action bg-light">References</a>
-      </div>
-    </div>
-    <!-- /#sidebar-wrapper -->
+    <!-- A horizontal navbar that becomes Toggle Button on small screens -->
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark">
 
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-
-        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+      <!-- Nav Bar Contents -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar" id="test">
         
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <!-- Links (Left) -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><strong>Home</strong></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="snapshot.html"><strong>Snapshot</strong></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="wealth.html"><strong>Wealth Gap</strong></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="action.html"><strong>Action</strong></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="trend.html"><strong>Trend</strong></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="reference.html"><strong>Reference</strong></a>
+          </li>
+        </ul>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">About Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <!-- Links (Right) -->
+        <ul class="navbar-nav my-2 my-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="aboutus.html"><strong>About Us</strong></a>
+          </li>
+        </ul>
 
-      <div class="container-fluid">
-        <h1 class="mt-4">School Enrollment Indicators Per Province</h1>
-        <br>
-        <br>
+      </div>
+
+    </nav>
+    <!-- /# Nav Bar -->
+
+    <!-- Page Contents -->
+    <div class="container-fluid">
+      <h1 class="mt-4" id="page-copy">School Enrollment Indicators Per Province</h1>
+      <br>
+      <br>
+
+      <div class = "d-flex justify-content-center">
+
         <!-- Graphic -->
         <div class="graphic">
           <div class="hed">Location Dictates Educational Opportunity</div>
           
           <!-- Buttons to choose indicators-->
-          <div class="button">
-            <button onclick="update(enrollment_status)">Enrollment Status</button>
-            <button onclick="update(enrollment_dropoutreasons)">Dropout Reasons</button>
-            <button onclick="update(enrollment_gender)">Enrollment per Gender</button>
-            <button onclick="update(enrollment_wealthlevel)">Enrollment per Wealth Level</button>
-            <button onclick="update(enrollment_schooltype)">Enrollment per School Type</button>
+          <div class="buttons">
+            <button class="btn-pressed" onclick="update(enrollment_status)">Enrollment Status</button>
+            <button class="btn-pressed" onclick="update(enrollment_dropoutreasons)">Dropout Reasons</button>
+            <button class="btn-pressed" onclick="update(enrollment_gender)">Enrollment per Gender</button>
+            <button class="btn-pressed" onclick="update(enrollment_wealthlevel)">Enrollment per Wealth Level</button>
+            <button class="btn-pressed" onclick="update(enrollment_schooltype)">Enrollment per School Type</button>  
           </div>
-         
+          
+
           <!-- Single bullet point to take away -->
           <div class="dek">
               <li id="dek-takeaway"></li>
@@ -85,36 +100,36 @@
 
           <!-- Chart -->
           <svg class="chart"></svg>
-          <div class="footnote" style="width:1000px"> Currently Enrolled (ce); Dropout (do); Never Enrolled (ne) <br> Source: <a href="http://aserpakistan.org/index.php">ASER Pakistan</a>. Dataset: <a href="data/wealth_gap.xlsx">data</a> <br>Note: Authors' calculation. The wealth level is determined by the quartile of An assets-based ASER composite wealth index, which measures the assets possession and wealth status of a household.</div>
+          <div class="footnote" style="width:1000px"> Currently Enrolled (ce); Dropout (do); Never Enrolled (ne) 
+            <br> Source: <a href="http://aserpakistan.org/index.php">ASER Pakistan</a>. Dataset: <a href="data/wealth_gap.xlsx">data</a> 
+            <br> Note: Authors' calculation. The wealth level is determined by the quartile of An assets-based ASER composite wealth index, which measures the assets possession and wealth status of a household.</div>
         </div>
-
-        <script src="https://d3js.org/d3.v4.min.js"></script>
-        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-        <script src="scripts/action-chart.js"></script>
-
-        <br>
-        <div style="width: 950px">
-          <iframe title="Student Population Per Province" aria-label="Pakistan provinces (2019) choropleth map" id="datawrapper-chart-x3co8" src="//datawrapper.dwcdn.net/x3co8/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-        </div>
-
       </div>
-    </div>
-    <!-- /#page-content-wrapper -->
 
+      <br>
+      <div class = "d-flex justify-content-center">
+        <div style="width: 950px">
+          <iframe title="Student Population Per Province" aria-label="Pakistan provinces (2019) choropleth map" id="datawrapper-chart-x3co8" 
+          src="//datawrapper.dwcdn.net/x3co8/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" 
+          height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+        </div>
+      
+      </div>
+
+    </div>
+  
   </div>
-  <!-- /#wrapper -->
+  <!-- /#page-content-wrapper -->
 
   <!-- Bootstrap core JavaScript -->
   <script src="bootstrap/vendor/jquery/jquery.min.js"></script>
   <script src="bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Menu Toggle Script -->
-  <script>
-    $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
-  </script>
+  <!-- Chart JavaScript -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="scripts/action-chart.js"></script>
+
 
 </body>
 
