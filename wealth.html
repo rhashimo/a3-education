@@ -61,7 +61,7 @@
         </div>
       </nav>
 
-      <div class="container-fluid", align="center">
+      <div class="container-fluid">
         <h1 class="mt-4">Nontrivial Wealth Gap in Education</h1>
         <br>
         <br>
@@ -70,19 +70,21 @@
           <div class="hed">Fewer Opportnities, Worse Outcomes</div>
           
           <!-- Buttons to choose indicators-->
-          <button onclick="update(wealth_status)">Educational Status</button>
-          <button onclick="update(wealth_int_type)">School Type</button>
-          <button onclick="update(wealth_basic)">Reading Levels</button>
-          <button onclick="update(wealth_arith)">Arithmetic Levels</button>
-          <button onclick="update(wealth_eng)">English Levels</button>
+          <div class="button">
+            <button onclick="update(wealth_status)">Educational Status</button>
+            <button onclick="update(wealth_int_type)">School Type</button>
+            <button onclick="update(wealth_basic)">Reading Levels</button>
+            <button onclick="update(wealth_arith)">Arithmetic Levels</button>
+            <button onclick="update(wealth_eng)">English Levels</button>
+          </div>
          
           <div class="dek">
-              <li id="dek-takeaway" style = "margin-top: 1%">More than one out of five children in poor households cannot attain education.</li>
+              <li id="dek-takeaway"></li>
           </div>
 
           <!-- Chart -->
           <svg class="chart"></svg>
-          <div class="footnote">Source: <a href="http://aserpakistan.org/index.php">ASER Pakistan</a>. Author's caluculation.</div>
+          <div class="footnote">Source: <a href="http://aserpakistan.org/index.php">ASER Pakistan</a>. Note: Authors' calculation. The wealth level is determined by the quartile of An assets-based ASER composite wealth index, constructed by ASER, which measures the assets possession and wealth status of a household.</div>
         </div>
 
 <!-- 

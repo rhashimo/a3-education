@@ -129,7 +129,21 @@ function update(input_data){
         .selectAll("text")
         .style("font-size","13px");
         
-  });
+  })
+
+  //key takeaways from each graph 
+  if(input_data == 'data/wealth_status.csv'){
+    takeaways = "Children lived in poor households are 4x more likely to be out of school than those in rich."
+  }else if (input_data == 'data/wealth_int-type.csv'){
+    takeaways = "Only 10% of children in poor households enroll into private schools due to financial reasons."
+  }else if (input_data == 'data/wealth_basic.csv'){
+    takeaways = "A considerable amont of poor children can barely read letters in local/national language."
+  }else if (input_data == 'data/wealth_arith.csv'){
+    takeaways = "Difference in Arithmatic levels may be less problematic compared to other indicators."
+  }else if (input_data == 'data/wealth_eng.csv'){
+    takeaways = "General tendency in English levels are the same as Reading levels; poor children perfom worse."
+  }
+  document.getElementById("dek-takeaway").innerHTML = takeaways;
 
 }
 
