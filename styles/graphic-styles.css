@@ -65,3 +65,16 @@
   .label--white {
       fill: #fff;
   }
+
+/*buttons for switching graphics*/
+.btn-pressed{
+  background-color: #FFEBCD;
+  border: none;
+  padding: 5px 10px;
+  color: black;
+  font-weight: 550;
+}
+.btn-pressed:hover, .btn-pressed:focus{
+  background-color: #DEB887;
+  outline: none;
+}
