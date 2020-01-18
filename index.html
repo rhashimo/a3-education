@@ -14,7 +14,10 @@
   <link href="bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="styles/simple-sidebar.css" rel="stylesheet">
+  <link href="styles/main-style.css" rel="stylesheet">
+
+  <!-- Index photo -->
+  <link rel="stylesheet" href="styles/index-photo-styles.css">
 
 </head>
 
@@ -25,6 +28,7 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
+      <!-- A horizontal navbar that becomes Toggle Button on small screens -->
       <nav class="navbar navbar-expand-sm bg-info navbar-dark">
 
         <!-- Links -->
@@ -37,32 +41,51 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar" id="test">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#"><strong> Link 1</strong></a>
+              <a class="nav-link" href="index.html"><strong>Home</strong></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link 2</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="snapshot.html"><strong>Snapshot</strong></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link 3</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="wealth.html"><strong>Wealth Gap</strong></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="action.html"><strong>Action</strong></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="trend.html"><strong>Trend</strong></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="reference.html"><strong>Reference</strong></a>
             </li>
           </ul>
 
-<!--           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <ul class="navbar-nav my-2 my-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="aboutus.html"><strong>About Us</strong></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">About Us</a>
-            </li>
-          </ul> -->
+          </ul>
+
         </div>
 
       </nav>
 
-      <div class="container-fluid">
-        <h1 class="mt-4">Visualizing Education in Pakistan</h1>
-        <p>After the passage of the 18th Amendment in 2012 in Pakistan, educational administration became a provincial subject. Since then, there has been a keen interest among various stakeholders to explore education indicators like subject proficiency and percentage of enrollment at the provincial and district level.</p>
-        <p>This website utilizes data from the 2018 Annual State of Education Report (ASER) to provide visualizations that seek to address this interest.</p>
+      <div>
+        <div class="hero-image" style="height: 800px">
+          <div class="hero-text">
+            <h1 style="font-size:40px">Visualizing Learning Across </h1>
+            <h1 style="font-size:50px"><font color="LimeGreen">Pakistan</font></h1>
+          </div>
+        </div>
+
+        <div class="container">   
+
+         <div class="text-block">
+            <p>After the passage of the 18th Amendment in 2012 in Pakistan, educational administration became a provincial subject. Since then, there has been a keen interest among various stakeholders to explore education indicators like subject proficiency and percentage of enrollment at the provincial and district level. 
+              This website utilizes data from the 2018 <a href="http://aserpakistan.org/index.php">Annual State of Education</a> Report to provide visualizations that seek to address this interest.</p>
+          </div>
+
+        </div>
       </div>
     </div>
     <!-- /#page-content-wrapper -->
@@ -73,14 +96,6 @@
   <!-- Bootstrap core JavaScript -->
   <script src="bootstrap/vendor/jquery/jquery.min.js"></script>
   <script src="bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Menu Toggle Script -->
-  <script>
-    $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
-  </script>
 
 </body>
 
