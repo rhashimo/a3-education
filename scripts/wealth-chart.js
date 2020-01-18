@@ -16,7 +16,7 @@ function update(input_data){
       height = 200 - margin.top - margin.bottom;
 
   var graphic = d3.select('.graphic')
-      .style('width', width + 'px');
+      .style('width', '1000px');
 
   var svg = graphic.select('svg.chart')
           .attr('width', width + margin.left + margin.right)
