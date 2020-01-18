@@ -12,11 +12,11 @@ function update(input_data){
   var formatLabel = function(d) { return d3.format('.1f')(d * 100) + "%"; };
 
   var margin = { top: 15, right: 10, bottom: 10, left: 120 },
-      width = 1000 - margin.left - margin.right,
+      width = 900 - margin.left - margin.right,
       height = 200 - margin.top - margin.bottom;
 
   var graphic = d3.select('.graphic')
-      .style('width', '1000px');
+      .style('width', '900px');
 
   var svg = graphic.select('svg.chart')
           .attr('width', width + margin.left + margin.right)
