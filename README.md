@@ -8,7 +8,7 @@ https://rhashimo.github.io/a3-education/index.html
 We are Abdullah Ali Khan, Ryuichiro Hashimoto, and Ancito Etienne. Abdullah Ali Khan is an Ed.M. candidate in Mind, Brain, and Education at the Harvard Graduate School of Education (HGSE). Ryuichiro Hashimoto is an MPA/ID candidate at Harvard Kennedy School. Ancito Etienne is an MPP Candidate at the Harvard Kennedy School concentrating in International and Global Affairs.
 
 # Data Source
-The data is from the ASER Reports from 2016 and 2018. To create the map in data wrapper data was used from the Pakistan Education Statistics for 2016 and 2017 report by Ministry of Federal Education and Professional TrainingGovernment of Pakistan.
+The data is from the ASER Reports from 2016 and 2018. To create the map in data wrapper data was used from the Pakistan Education Statistics for 2016 and 2017 report by Ministry of Federal Education and Professional Training Government of Pakistan.
 
 # Data Transformation
 - For inequity and trends pages, please see https://github.com/rhashimo/a3-education/tree/master/data-transformation/inequity_trends
