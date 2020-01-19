@@ -1,0 +1,33 @@
+a {
+  color: grey;
+  text-decoration: none;
+}
+
+/* unvisited link */
+a:link:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:visited:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: orange;
+  text-decoration: none
+}
+
+a:active {
+  color: grey;
+  text-decoration: none
+} 
+
+a:focus{
+  color:grey;
+  text-decoration: none
+} */
+
