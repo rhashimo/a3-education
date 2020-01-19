@@ -1,9 +1,9 @@
 // Set dataset
-var wealth_status = 'data/wealth_status.csv'
-var wealth_int_type = 'data/wealth_int-type.csv'
-var wealth_basic = 'data/wealth_basic.csv'
-var wealth_arith = 'data/wealth_arith.csv'
-var wealth_eng = 'data/wealth_eng.csv'
+var inequity_status = 'data/inequity_status.csv'
+var inequity_int_type = 'data/inequity_int-type.csv'
+var inequity_basic = 'data/inequity_basic.csv'
+var inequity_arith = 'data/inequity_arith.csv'
+var inequity_eng = 'data/inequity_eng.csv'
 
 function update(input_data){
 
@@ -133,19 +133,19 @@ function update(input_data){
   })
 
   //key takeaways from each graph 
-  if(input_data == 'data/wealth_status.csv'){
+  if(input_data == 'data/inequity_status.csv'){
     takeaways = "Children living in poor households are 4x more likely to be out of school than those in rich households."
-  }else if (input_data == 'data/wealth_int-type.csv'){
+  }else if (input_data == 'data/inequity_int-type.csv'){
     takeaways = "Only 10% of children in poor households enroll into private schools due to financial reasons."
-  }else if (input_data == 'data/wealth_basic.csv'){
+  }else if (input_data == 'data/inequity_basic.csv'){
     takeaways = "A considerable amont of poor children can barely read letters in their local/national language."
-  }else if (input_data == 'data/wealth_arith.csv'){
+  }else if (input_data == 'data/inequity_arith.csv'){
     takeaways = "Difference in Arithmetic levels is not as influenced by wealth as other indicators."
-  }else if (input_data == 'data/wealth_eng.csv'){
+  }else if (input_data == 'data/inequity_eng.csv'){
     takeaways = "The patterns for English and Reading levels are similar; poor children perfom worse."
   }
   document.getElementById("dek-takeaway").innerHTML = takeaways;
 
 }
 
-update(wealth_status)
+update(inequity_status)
