@@ -103,6 +103,7 @@ d3.tsv("data/snapshot.tsv", function(error, data) {
 		.attr("height", function(d) { return yscale(d.yp0) - yscale(d.yp1); })
 		.style("fill", function(d) { return colors(d.response); });
 	
+
 	// position the legend elements
 	var legendVals = ["Beginner", "Reads letters", "Reads words", "Reads sentences","Reads stories"] ;
 	var color = d3.scale.ordinal()
