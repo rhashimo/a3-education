@@ -135,11 +135,11 @@ function update(input_data){
   if(input_data == 'data/action-enrollment0.csv'){
     takeaways = "The national average of enrollment is 71.7%. Khyber Pakhtunkhwa and Balochistan are below the national average."
   }else if (input_data == 'data/action-enrollment1.csv'){
-    takeaways = "Poverty and migration lead to dropout. The province most affected is Balochistan."
+    takeaways = "Poverty and migration affect dropout. The province most affected is Balochistan."
   }else if (input_data == 'data/action-enrollment2.csv'){
     takeaways = "Among dropouts and children never enrolled in school, the proportion is similar between males and females." 
   }else if (input_data == 'data/action-enrollment3.csv'){
-    takeaways = "Across Pakistan, out-of-school children tend to be from from the bottom two income levels"
+    takeaways = "Across Pakistan, out-of-school children tend to be from the bottom two income levels"
   }else if (input_data == 'data/action-enrollment4.csv'){
     takeaways = "The majority of enrolled children attend either government or private schools."
   }
@@ -149,7 +149,7 @@ function update(input_data){
   if(input_data == 'data/action-enrollment2.csv'){
     note = "Currently Enrolled (ce); Dropout (do); Never Enrolled (ne); N/A (gender data was not collected)"
   } else if(input_data == 'data/action-enrollment3.csv'){
-    note = "Currently Enrolled (ce); Dropout (do); Never Enrolled (ne)"
+    note = "Currently Enrolled (ce); Dropout (do); Never Enrolled (ne); Poorest (Poor); Poor (Relatively Poor); Relatively Rich (Rich) Rich(Richest)"
   }else{note = ""}
   document.getElementById("note-about-status").innerHTML = note;
 }
