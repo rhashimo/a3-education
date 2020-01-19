@@ -47,10 +47,6 @@
 		<title></title>
 	</head>
 	<body>
-		<form>
-		  <label><input type="radio" name="mode" value="bypercent" checked> Percent</label>
-		  <label><input type="radio" name="mode" value="bycount"> Number of Respondants</label>
-		</form>
 				
 		<div id="chart"></div>
 		
@@ -68,6 +64,7 @@ var yscale = d3.scale.linear()
 
 var colors = d3.scale.ordinal()
 	.range(["#63c172", "#ee9952", "#46d6c4", "#fee851", "#98bc9a"]);
+
 	
 var xaxis = d3.svg.axis()
 	.scale(xscale)
@@ -178,66 +175,7 @@ d3.tsv("data.tsv", function(error, data) {
 		.style("text-anchor", "start")
 		.text(function(d) { return d; });
 	
-	// animation
-	d3.selectAll("input").on("change", handleFormClick);
 	
-	function handleFormClick() {
-		if (this.value === "bypercent") {
-			transitionPercent();
-		} else {
-			transitionCount();
-		}
-	}
-	
-	// transition to 'percent' presentation
-	function transitionPercent() {
-		// reset the yscale domain to default
-		yscale.domain([0, 1]);
-
-		// create the transition
-		var trans = svg.transition().duration(250);
-		
-		// transition the bars
-		var categories = trans.selectAll(".category");
-		categories.selectAll("rect")
-			.attr("y", function(d) { return yscale(d.yp1); })
-			.attr("height", function(d) { return yscale(d.yp0) - yscale(d.yp1); });
-			
-		// change the y-axis
-		// set the y axis tick format
-		yaxis.tickFormat(d3.format(".0%"));
-		svg.selectAll(".y.axis").call(yaxis);
-	}
-	
-	// transition to 'count' presentation
-	function transitionCount() {
-		// set the yscale domain
-		yscale.domain([0, d3.max(parsedata, function(d) { return d.totalresponses; })]);
-
-		// create the transition
-		var transone = svg.transition()
-			.duration(250);
-
-		// transition the bars (step one)
-		var categoriesone = transone.selectAll(".category");
-		categoriesone.selectAll("rect")
-			.attr("y", function(d) { return this.getBBox().y + this.getBBox().height - (yscale(d.y0) - yscale(d.y1)) })
-			.attr("height", function(d) { return yscale(d.y0) - yscale(d.y1); });
-			
-		// transition the bars (step two)
-		var transtwo = transone.transition()
-			.delay(350)
-			.duration(350)
-			.ease("bounce");
-		var categoriestwo = transtwo.selectAll(".category");
-		categoriestwo.selectAll("rect")
-			.attr("y", function(d) { return yscale(d.y1); });
-
-		// change the y-axis
-		// set the y axis tick format
-		yaxis.tickFormat(d3.format(".2s"));
-		svg.selectAll(".y.axis").call(yaxis);
-	}
 });
 
 d3.select(self.frameElement).style("height", (height + margin.top + margin.bottom) + "px");

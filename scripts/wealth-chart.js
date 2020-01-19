@@ -62,7 +62,8 @@ function update(input_data){
       xScale.range([0, columnScale.bandwidth()]);
 
       // Excluding the light colors from the color scheme
-      var colorRange = d3.schemeTableau10;
+      delete colorRange;
+      colorRange = d3.schemeRdYlBu[6];
       colorScale
           .domain(dataFlat.map(color))
           .range(colorRange);
@@ -102,7 +103,7 @@ function update(input_data){
       function positionLabel(d) {
           var xValue = xScale(x(d));
           var xMax = xScale.range()[1];
-          if (xValue < (0.25 * xMax)) {
+          if (xValue < (0.30 * xMax)) {
               d3.select(this)
                   .classed('label--white', false)
                   .attr('x', xValue)
