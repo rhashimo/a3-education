@@ -165,9 +165,9 @@ function update(input_data){
   }else if (input_data == 'data/trend_reading.csv'){
     takeaways = "Reading level in local/national language had stayed at almost the same level."
   }else if (input_data == 'data/trend_arith.csv'){
-    takeaways = "All provinces had achieved remarkable improvement on Arithmatic level."
+    takeaways = "All provinces had achieved remarkable improvement on Arithmetic level."
   }else{
-    takeaways = "English level also stucks; rather, top two provinces observed relatively large decline."
+    takeaways = "English level also stuck; rather, top two provinces observed relatively large decline."
   }
   document.getElementById("dek-takeaway").innerHTML = takeaways;
 
