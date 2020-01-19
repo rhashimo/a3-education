@@ -26,3 +26,8 @@ The data is from the ASER Reports from 2016 and 2018. To create the map in data 
 # Link to a record of standup meetings including burndown for each sprint
 https://github.com/rhashimo/a3-education/blob/master/Burndown%20Chart.xlsx
 
+# Link to USER STORIES board (for any additional user stories)
+Scrum Board Sprint 1: https://github.com/rhashimo/a3-education/projects/2
+Scrum Board Sprint 2: https://github.com/rhashimo/a3-education/projects/3
+Backlog: https://github.com/rhashimo/a3-education/projects/1
+
