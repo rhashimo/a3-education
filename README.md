@@ -23,3 +23,6 @@ The data is from the ASER Reports from 2016 and 2018. To create the map in data 
 - then in your terminal, type python3 -m http.server 8000
 - then copy http://0.0.0.0:8000/ into your web browser to see the website.
 
+# Link to a record of standup meetings including burndown for each sprint
+https://github.com/rhashimo/a3-education/blob/master/Burndown%20Chart.xlsx
+
