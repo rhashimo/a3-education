@@ -139,7 +139,7 @@ function update(input_data){
   }else if (input_data == 'data/action-enrollment2.csv'){
     takeaways = "Among dropouts and children never enrolled in school, the proportion is similar between males and females." 
   }else if (input_data == 'data/action-enrollment3.csv'){
-    takeaways = "Across Pakistan, non-enrollment for children from the top two and bottom two income levels is relatively the same."
+    takeaways = "Across Pakistan, out-of-school children tend to be from from the bottom two income levels"
   }else if (input_data == 'data/action-enrollment4.csv'){
     takeaways = "The majority of enrolled children attend either government or private schools."
   }
