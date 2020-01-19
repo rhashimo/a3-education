@@ -134,15 +134,15 @@ function update(input_data){
 
   //key takeaways from each graph 
   if(input_data == 'data/wealth_status.csv'){
-    takeaways = "Children lived in poor households are 4x more likely to be out of school than those in rich."
+    takeaways = "Children living in poor households are 4x more likely to be out of school than those in rich households."
   }else if (input_data == 'data/wealth_int-type.csv'){
     takeaways = "Only 10% of children in poor households enroll into private schools due to financial reasons."
   }else if (input_data == 'data/wealth_basic.csv'){
-    takeaways = "A considerable amont of poor children can barely read letters in local/national language."
+    takeaways = "A considerable amont of poor children can barely read letters in their local/national language."
   }else if (input_data == 'data/wealth_arith.csv'){
-    takeaways = "Difference in Arithmatic levels may be less problematic compared to other indicators."
+    takeaways = "Difference in Arithmetic levels is not as influenced by wealth as other indicators."
   }else if (input_data == 'data/wealth_eng.csv'){
-    takeaways = "General tendency in English levels are the same as Reading levels; poor children perfom worse."
+    takeaways = "The patterns for English and Reading levels are similar; poor children perfom worse."
   }
   document.getElementById("dek-takeaway").innerHTML = takeaways;
 
