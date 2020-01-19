@@ -1,0 +1,18 @@
+The data used for this project is from the ASER Report for 2018.
+The format in which the data came was easily manipulatable in Excel, therefore I used excel to manipulate the data.
+
+I moved the columns of interest to the front so the data can be easily visualized as it's being manipulated.
+
+The columns of interest were renamed using the vlookup function to match headers in the dataset with the actual names in the variable name sheet. This was done to make data education indicators easily identifiable.
+
+Pivot tables were then used to provide a summary of the data. 
+The data was then converted to csv manually using Mac built-in CSV converter.
+The data was then added to files named "action-enrollment0", "action-enrollment1", "action-enrollment2", "action-enrollment3", "action-enrollment4".
+These files were then read into the codes for D3.
+
+A map of Pakistan was created in Datawrapper to allow personas not familiar with Pakistan to quickly be able to visualize the different provinces represented, and to be to learn the student population in each province of Pakistan.
+The data used was from from the Pakistan Education Statistics for 2016 and 2017 report by Ministry of Federal Education and Professional Training Government of Pakistan.
+A link from data wrapper html text file for my page.
+
+The color scheme and chart styles codes used were found by Ryuichiro Hashimoto in the internet.
+
