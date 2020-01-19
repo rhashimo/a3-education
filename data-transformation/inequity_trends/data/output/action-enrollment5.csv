@@ -1,0 +1,57 @@
+category,provinces,share
+Law and order,Azad Kashmir,0.066274719
+Law and order,Balochistan,0.291822555
+Law and order,Gilgit-Baltistan,0.033671833
+Law and order,Islamabad - ICT,0.005344735
+Law and order,Khyber Pakhtunkhwa,0.272047034
+Law and order,Punjab,0.233564939
+Law and order,Sindh,0.097274185
+Poverty,Azad Kashmir,0.010555795
+Poverty,Balochistan,0.455407152
+Poverty,Gilgit-Baltistan,0.027574321
+Poverty,Islamabad - ICT,0.004954761
+Poverty,Khyber Pakhtunkhwa,0.193451099
+Poverty,Punjab,0.222533391
+Poverty,Sindh,0.085523481
+Migration,Azad Kashmir,0.083333333
+Migration,Balochistan,0
+Migration,Gilgit-Baltistan,0
+Migration,Islamabad - ICT,0
+Migration,Khyber Pakhtunkhwa,0.722222222
+Migration,Punjab,0.194444444
+Migration,Sindh,0
+Flood,Azad Kashmir,0.272727273
+Flood,Balochistan,0.2
+Flood,Gilgit-Baltistan,0
+Flood,Islamabad - ICT,0
+Flood,Khyber Pakhtunkhwa,0.272727273
+Flood,Punjab,0.218181818
+Flood,Sindh,0.036363636
+Illness,Azad Kashmir,0.142857143
+Illness,Balochistan,0.285714286
+Illness,Gilgit-Baltistan,0.142857143
+Illness,Islamabad - ICT,0
+Illness,Khyber Pakhtunkhwa,0.142857143
+Illness,Punjab,0.285714286
+Illness,Sindh,0
+School Building Shifted by Gov't,Azad Kashmir,0.142857143
+School Building Shifted by Gov't,Balochistan,0.142857143
+School Building Shifted by Gov't,Gilgit-Baltistan,0.028571429
+School Building Shifted by Gov't,Islamabad - ICT,0
+School Building Shifted by Gov't,Khyber Pakhtunkhwa,0.257142857
+School Building Shifted by Gov't,Punjab,0.114285714
+School Building Shifted by Gov't,Sindh,0.314285714
+Other,Azad Kashmir,0.021989985
+Other,Balochistan,0.59721315
+Other,Gilgit-Baltistan,0.027868496
+Other,Islamabad - ICT,0.002612671
+Other,Khyber Pakhtunkhwa,0.168081864
+Other,Punjab,0.133463967
+Other,Sindh,0.048769867
+Grand Total,Azad Kashmir,0.026514814
+Grand Total,Balochistan,0.482338286
+Grand Total,Gilgit-Baltistan,0.02856126
+Grand Total,Islamabad - ICT,0.004003915
+Grand Total,Khyber Pakhtunkhwa,0.198416229
+Grand Total,Punjab,0.187561171
+Grand Total,Sindh,0.072604324

@@ -1,0 +1,145 @@
+RID,RNAME,DID,DNAME
+2,Punjab,146,Lahore
+2,Punjab,147,Chiniot
+2,Punjab,148,Faisalabad
+2,Punjab,149,Jhang
+2,Punjab,150,Kasur
+2,Punjab,151,Khanewal
+2,Punjab,152,Mianwali
+2,Punjab,153,Multan
+2,Punjab,154,Nankana Sahib
+2,Punjab,155,Rahim Yar Khan
+2,Punjab,156,Rawalpindi
+2,Punjab,157,Sargodha
+2,Punjab,158,Sheikhupura
+2,Punjab,159,Attock
+2,Punjab,160,Bahawalnager
+2,Punjab,161,Bahawalpur
+2,Punjab,162,Chakwal
+2,Punjab,163,Gujranwala
+2,Punjab,164,Jehlum
+2,Punjab,165,Khushab
+2,Punjab,166,Lodhran
+2,Punjab,167,Mandi Bahuddin
+2,Punjab,169,Rajanpur
+2,Punjab,170,Sahiwal
+2,Punjab,171,T.T.Singh
+2,Punjab,172,Vehari
+2,Punjab,173,Hafizabad
+2,Punjab,174,Bhakkar
+2,Punjab,175,Dera Ghazi Khan
+2,Punjab,176,Gujrat
+2,Punjab,177,Layyah
+2,Punjab,178,Narowal
+2,Punjab,179,Okara
+2,Punjab,180,Pakpattan
+2,Punjab,181,Sialkot
+3,Sindh,182,Sukkur
+3,Sindh,183,Khairpur
+3,Sindh,184,Gotki
+3,Sindh,185,Mirpurkhas
+3,Sindh,186,Mithi
+3,Sindh,187,Umer kot
+3,Sindh,188,Dadu
+3,Sindh,189,Hyderabad
+3,Sindh,190,Jamshoro
+3,Sindh,191,Larkana
+3,Sindh,192,Nowshero Feroze
+3,Sindh,193,Sanghar
+3,Sindh,194,Tando Allah Yar
+3,Sindh,195,Tando Muhammad Khan
+3,Sindh,196,Thatta
+3,Sindh,197,Shikarpur
+3,Sindh,198,Kashmore
+3,Sindh,199,Badin
+3,Sindh,200,Jacobabad
+3,Sindh,202,Matiari
+3,Sindh,203,Shaheed Benazirabad
+3,Sindh,204,Qambar Shahdadkot
+3,Sindh,315,Karachi-Malir-Rural
+3,Sindh,316,Karachi-West-Rural
+3,Sindh,320,Sajawal
+4,Balochistan,205,Quetta
+4,Balochistan,206,Barkhan
+4,Balochistan,207,Kallat
+4,Balochistan,208,Jafarabad
+4,Balochistan,209,Chaghi
+4,Balochistan,210,Ziarat
+4,Balochistan,211,Kech (Turbat)
+4,Balochistan,212,Nushki
+4,Balochistan,213,Khuzdar
+4,Balochistan,214,Qilla Abdullah
+4,Balochistan,215,Qilla Saifullah
+4,Balochistan,216,Kharan
+4,Balochistan,217,Musakhel
+4,Balochistan,218,Kohlu
+4,Balochistan,219,Pishin
+4,Balochistan,220,Zhob
+4,Balochistan,221,Sherani
+4,Balochistan,222,Mastung
+4,Balochistan,223,Awaran
+4,Balochistan,224,Bolan
+4,Balochistan,225,Dera Bugti
+4,Balochistan,226,Gwadar
+4,Balochistan,227,Harnai
+4,Balochistan,228,Jhal Magsi
+4,Balochistan,229,Lasbela
+4,Balochistan,230,Loralai
+4,Balochistan,231,Nasirabad
+4,Balochistan,232,Panjgur
+4,Balochistan,233,Sibi
+4,Balochistan,234,Washuk
+4,Balochistan,318,Lehri
+4,Balochistan,319,SOHBATPUR
+5,Khyber Pakhtunkhwa,235,Peshawar
+5,Khyber Pakhtunkhwa,236,Charsadda
+5,Khyber Pakhtunkhwa,237,Swabi
+5,Khyber Pakhtunkhwa,238,Abbottabad
+5,Khyber Pakhtunkhwa,239,Mansehra
+5,Khyber Pakhtunkhwa,240,Bannu
+5,Khyber Pakhtunkhwa,241,Battagram
+5,Khyber Pakhtunkhwa,242,Dera Ismail Khan
+5,Khyber Pakhtunkhwa,243,Haripur
+5,Khyber Pakhtunkhwa,244,Karak
+5,Khyber Pakhtunkhwa,245,Malakand
+5,Khyber Pakhtunkhwa,246,Swat
+5,Khyber Pakhtunkhwa,247,Tank
+5,Khyber Pakhtunkhwa,248,Upper Dir
+5,Khyber Pakhtunkhwa,249,Mardan
+5,Khyber Pakhtunkhwa,250,Buner
+5,Khyber Pakhtunkhwa,251,Chitral
+5,Khyber Pakhtunkhwa,252,Hangu
+5,Khyber Pakhtunkhwa,253,Kohat
+5,Khyber Pakhtunkhwa,254,Kohistan
+5,Khyber Pakhtunkhwa,255,Lakki Marwat
+5,Khyber Pakhtunkhwa,256,Lower Dir
+5,Khyber Pakhtunkhwa,257,Nowshera
+5,Khyber Pakhtunkhwa,258,Shangla
+5,Khyber Pakhtunkhwa,259,Tor Ghar
+6,Gilgit-Baltistan,260,Gilgit
+6,Gilgit-Baltistan,261,Diamer
+6,Gilgit-Baltistan,262,Skardu
+6,Gilgit-Baltistan,263,Ghanche
+6,Gilgit-Baltistan,264,Astore
+6,Gilgit-Baltistan,265,Ghizer
+6,Gilgit-Baltistan,266,Hunza-Nagar
+7,Azad Jammu and Kashmir,267,Muzaffarabad
+7,Azad Jammu and Kashmir,268,Bagh
+7,Azad Jammu and Kashmir,269,Mirpur
+7,Azad Jammu and Kashmir,270,Neelum
+7,Azad Jammu and Kashmir,271,Hattian
+7,Azad Jammu and Kashmir,272,Bhimber
+7,Azad Jammu and Kashmir,273,Kotli
+7,Azad Jammu and Kashmir,274,Poonch
+7,Azad Jammu and Kashmir,275,Haveli
+7,Azad Jammu and Kashmir,276,Sudhnati
+8,Islamabad - ICT,277,Islamabad
+9,Federally Administrated Tribal Areas,278,Khyber Agency
+9,Federally Administrated Tribal Areas,279,F.R. - D.I. Khan
+9,Federally Administrated Tribal Areas,280,F.R. - Peshawar
+9,Federally Administrated Tribal Areas,281,F.R. - Bannu
+9,Federally Administrated Tribal Areas,282,F.R. - Tank
+9,Federally Administrated Tribal Areas,284,Kurram Agency
+9,Federally Administrated Tribal Areas,287,Orakzai Agency
+9,Federally Administrated Tribal Areas,289,F.R. - Kohat
+9,Federally Administrated Tribal Areas,290,F.R. - Lakki Marwat

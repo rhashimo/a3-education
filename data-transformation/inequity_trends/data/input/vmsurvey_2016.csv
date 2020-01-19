@@ -1,0 +1,145 @@
+rid,rname_row,did,dname_row,rname,dname
+2,Punjab,146,Lahore,Punjab,Lahore
+2,Punjab,147,Chiniot,Punjab,Chiniot
+2,Punjab,148,Faisalabad,Punjab,Faisalabad
+2,Punjab,149,Jhang,Punjab,Jhang
+2,Punjab,150,Kasur,Punjab,Kasur
+2,Punjab,151,Khanewal,Punjab,Khanewal
+2,Punjab,152,Mianwali,Punjab,Mianwali
+2,Punjab,153,Multan,Punjab,Multan
+2,Punjab,154,Nankana Sahib,Punjab,Nankana Sahib
+2,Punjab,155,Rahim Yar Khan,Punjab,Rahim Yar Khan
+2,Punjab,156,Rawalpindi,Punjab,Rawalpindi
+2,Punjab,157,Sargodha,Punjab,Sargodha
+2,Punjab,158,Sheikhupura,Punjab,Sheikhupura
+2,Punjab,159,Attock,Punjab,Attock
+2,Punjab,160,Bahawalnager,Punjab,Bahawalnager
+2,Punjab,161,Bahawalpur,Punjab,Bahawalpur
+2,Punjab,162,Chakwal,Punjab,Chakwal
+2,Punjab,163,Gujranwala,Punjab,Gujranwala
+2,Punjab,164,Jehlum,Punjab,Jehlum
+2,Punjab,165,Khushab,Punjab,Khushab
+2,Punjab,166,Lodhran,Punjab,Lodhran
+2,Punjab,167,Mandi Bahuddin,Punjab,Mandi Bahuddin
+2,Punjab,169,Rajanpur,Punjab,Rajanpur
+2,Punjab,170,Sahiwal,Punjab,Sahiwal
+2,Punjab,171,T.T.Singh,Punjab,T.T.Singh
+2,Punjab,172,Vehari,Punjab,Vehari
+2,Punjab,173,Hafizabad,Punjab,Hafizabad
+2,Punjab,174,Bhakkar,Punjab,Bhakkar
+2,Punjab,175,Dera Ghazi Khan,Punjab,Dera Ghazi Khan
+2,Punjab,176,Gujrat,Punjab,Gujrat
+2,Punjab,177,Layyah,Punjab,Layyah
+2,Punjab,178,Narowal,Punjab,Narowal
+2,Punjab,179,Okara,Punjab,Okara
+2,Punjab,180,Pakpattan,Punjab,Pakpattan
+2,Punjab,181,Sialkot,Punjab,Sialkot
+3,Sindh,182,Sukkur,Sindh,Sukkur
+3,Sindh,183,Khairpur,Sindh,Khairpur
+3,Sindh,184,Gotki,Sindh,Gotki
+3,Sindh,185,Mirpurkhas,Sindh,Mirpurkhas
+3,Sindh,186,Mithi,Sindh,Mithi
+3,Sindh,187,Umer kot,Sindh,Umer kot
+3,Sindh,188,Dadu,Sindh,Dadu
+3,Sindh,189,Hyderabad,Sindh,Hyderabad
+3,Sindh,190,Jamshoro,Sindh,Jamshoro
+3,Sindh,191,Larkana,Sindh,Larkana
+3,Sindh,192,Nowshero Feroze,Sindh,Nowshero Feroze
+3,Sindh,193,Sanghar,Sindh,Sanghar
+3,Sindh,194,Tando Allah Yar,Sindh,Tando Allah Yar
+3,Sindh,195,Tando Muhammad Khan,Sindh,Tando Muhammad Khan
+3,Sindh,196,Thatta,Sindh,Thatta
+3,Sindh,197,Shikarpur,Sindh,Shikarpur
+3,Sindh,198,Kashmore,Sindh,Kashmore
+3,Sindh,199,Badin,Sindh,Badin
+3,Sindh,200,Jacobabad,Sindh,Jacobabad
+3,Sindh,202,Matiari,Sindh,Matiari
+3,Sindh,203,Shaheed Benazirabad,Sindh,Shaheed Benazirabad
+3,Sindh,204,Qambar Shahdadkot,Sindh,Qambar Shahdadkot
+3,Sindh,315,Karachi-Malir-Rural,Sindh,Karachi-Malir-Rural
+3,Sindh,316,Karachi-West-Rural,Sindh,Karachi-West-Rural
+3,Sindh,320,Sajawal,Sindh,Sajawal
+4,Balochistan,205,Quetta,Balochistan,Quetta
+4,Balochistan,206,Barkhan,Balochistan,Barkhan
+4,Balochistan,207,Kallat,Balochistan,Kallat
+4,Balochistan,208,Jafarabad,Balochistan,Jafarabad
+4,Balochistan,209,Chaghi,Balochistan,Chaghi
+4,Balochistan,210,Ziarat,Balochistan,Ziarat
+4,Balochistan,211,Kech (Turbat),Balochistan,Kech (Turbat)
+4,Balochistan,212,Nushki,Balochistan,Nushki
+4,Balochistan,213,Khuzdar,Balochistan,Khuzdar
+4,Balochistan,214,Qilla Abdullah,Balochistan,Qilla Abdullah
+4,Balochistan,215,Qilla Saifullah,Balochistan,Qilla Saifullah
+4,Balochistan,216,Kharan,Balochistan,Kharan
+4,Balochistan,217,Musakhel,Balochistan,Musakhel
+4,Balochistan,218,Kohlu,Balochistan,Kohlu
+4,Balochistan,219,Pishin,Balochistan,Pishin
+4,Balochistan,220,Zhob,Balochistan,Zhob
+4,Balochistan,221,Sherani,Balochistan,Sherani
+4,Balochistan,222,Mastung,Balochistan,Mastung
+4,Balochistan,223,Awaran,Balochistan,Awaran
+4,Balochistan,224,Bolan,Balochistan,Bolan
+4,Balochistan,225,Dera Bugti,Balochistan,Dera Bugti
+4,Balochistan,226,Gwadar,Balochistan,Gwadar
+4,Balochistan,227,Harnai,Balochistan,Harnai
+4,Balochistan,228,Jhal Magsi,Balochistan,Jhal Magsi
+4,Balochistan,229,Lasbela,Balochistan,Lasbela
+4,Balochistan,230,Loralai,Balochistan,Loralai
+4,Balochistan,231,Nasirabad,Balochistan,Nasirabad
+4,Balochistan,232,Panjgur,Balochistan,Panjgur
+4,Balochistan,233,Sibi,Balochistan,Sibi
+4,Balochistan,234,Washuk,Balochistan,Washuk
+4,Balochistan,318,Lehri,Balochistan,Lehri
+4,Balochistan,319,SOHBATPUR,Balochistan,SOHBATPUR
+5,Khyber Pakhtunkhwa,235,Peshawar,Khyber Pakhtunkhwa,Peshawar
+5,Khyber Pakhtunkhwa,236,Charsadda,Khyber Pakhtunkhwa,Charsadda
+5,Khyber Pakhtunkhwa,237,Swabi,Khyber Pakhtunkhwa,Swabi
+5,Khyber Pakhtunkhwa,238,Abbottabad,Khyber Pakhtunkhwa,Abbottabad
+5,Khyber Pakhtunkhwa,239,Mansehra,Khyber Pakhtunkhwa,Mansehra
+5,Khyber Pakhtunkhwa,240,Bannu,Khyber Pakhtunkhwa,Bannu
+5,Khyber Pakhtunkhwa,241,Battagram,Khyber Pakhtunkhwa,Battagram
+5,Khyber Pakhtunkhwa,242,Dera Ismail Khan,Khyber Pakhtunkhwa,Dera Ismail Khan
+5,Khyber Pakhtunkhwa,243,Haripur,Khyber Pakhtunkhwa,Haripur
+5,Khyber Pakhtunkhwa,244,Karak,Khyber Pakhtunkhwa,Karak
+5,Khyber Pakhtunkhwa,245,Malakand,Khyber Pakhtunkhwa,Malakand
+5,Khyber Pakhtunkhwa,246,Swat,Khyber Pakhtunkhwa,Swat
+5,Khyber Pakhtunkhwa,247,Tank,Khyber Pakhtunkhwa,Tank
+5,Khyber Pakhtunkhwa,248,Upper Dir,Khyber Pakhtunkhwa,Upper Dir
+5,Khyber Pakhtunkhwa,249,Mardan,Khyber Pakhtunkhwa,Mardan
+5,Khyber Pakhtunkhwa,250,Buner,Khyber Pakhtunkhwa,Buner
+5,Khyber Pakhtunkhwa,251,Chitral,Khyber Pakhtunkhwa,Chitral
+5,Khyber Pakhtunkhwa,252,Hangu,Khyber Pakhtunkhwa,Hangu
+5,Khyber Pakhtunkhwa,253,Kohat,Khyber Pakhtunkhwa,Kohat
+5,Khyber Pakhtunkhwa,254,Kohistan,Khyber Pakhtunkhwa,Kohistan
+5,Khyber Pakhtunkhwa,255,Lakki Marwat,Khyber Pakhtunkhwa,Lakki Marwat
+5,Khyber Pakhtunkhwa,256,Lower Dir,Khyber Pakhtunkhwa,Lower Dir
+5,Khyber Pakhtunkhwa,257,Nowshera,Khyber Pakhtunkhwa,Nowshera
+5,Khyber Pakhtunkhwa,258,Shangla,Khyber Pakhtunkhwa,Shangla
+5,Khyber Pakhtunkhwa,259,Tor Ghar,Khyber Pakhtunkhwa,Tor Ghar
+6,Gilgit-Baltistan,260,Gilgit,Gilgit-Baltistan,Gilgit
+6,Gilgit-Baltistan,261,Diamer,Gilgit-Baltistan,Diamer
+6,Gilgit-Baltistan,262,Skardu,Gilgit-Baltistan,Skardu
+6,Gilgit-Baltistan,263,Ghanche,Gilgit-Baltistan,Ghanche
+6,Gilgit-Baltistan,264,Astore,Gilgit-Baltistan,Astore
+6,Gilgit-Baltistan,265,Ghizer,Gilgit-Baltistan,Ghizer
+6,Gilgit-Baltistan,266,Hunza-Nagar,Gilgit-Baltistan,Hunza-Nagar
+7,Azad Jammu and Kashmir,267,Muzaffarabad,Azad Jammu and Kashmir,Muzaffarabad
+7,Azad Jammu and Kashmir,268,Bagh,Azad Jammu and Kashmir,Bagh
+7,Azad Jammu and Kashmir,269,Mirpur,Azad Jammu and Kashmir,Mirpur
+7,Azad Jammu and Kashmir,270,Neelum,Azad Jammu and Kashmir,Neelum
+7,Azad Jammu and Kashmir,271,Hattian,Azad Jammu and Kashmir,Hattian
+7,Azad Jammu and Kashmir,272,Bhimber,Azad Jammu and Kashmir,Bhimber
+7,Azad Jammu and Kashmir,273,Kotli,Azad Jammu and Kashmir,Kotli
+7,Azad Jammu and Kashmir,274,Poonch,Azad Jammu and Kashmir,Poonch
+7,Azad Jammu and Kashmir,275,Haveli,Azad Jammu and Kashmir,Haveli
+7,Azad Jammu and Kashmir,276,Sudhnati,Azad Jammu and Kashmir,Sudhnati
+8,Islamabad - ICT,277,Islamabad,Islamabad - ICT,Islamabad
+9,Federally Administrated Tribal Areas,278,Khyber Agency,Khyber Pakhtunkhwa,Khyber Agency
+9,Federally Administrated Tribal Areas,279,F.R. - D.I. Khan,Khyber Pakhtunkhwa,F.R. - D.I. Khan
+9,Federally Administrated Tribal Areas,280,F.R. - Peshawar,Khyber Pakhtunkhwa,F.R. - Peshawar
+9,Federally Administrated Tribal Areas,281,F.R. - Bannu,Khyber Pakhtunkhwa,F.R. - Bannu
+9,Federally Administrated Tribal Areas,282,F.R. - Tank,Khyber Pakhtunkhwa,F.R. - Tank
+9,Federally Administrated Tribal Areas,284,Kurram Agency,Khyber Pakhtunkhwa,Kurram Agency
+9,Federally Administrated Tribal Areas,287,Orakzai Agency,Khyber Pakhtunkhwa,Orakzai Agency
+9,Federally Administrated Tribal Areas,289,F.R. - Kohat,Khyber Pakhtunkhwa,F.R. - Kohat
+9,Federally Administrated Tribal Areas,290,F.R. - Lakki Marwat,Khyber Pakhtunkhwa,F.R. - Lakki Marwat

@@ -1,0 +1,25 @@
+"category","windex","share"
+"Beginner/Nothing","Poor",0.142886055454361
+"Recognition of 1-9","Poor",0.0980570734669095
+"Recognition of 10-99","Poor",0.145517101801255
+"Recognition of 100-200","Poor",0.191256830601093
+"Subtraction","Poor",0.179923092491399
+"Division","Poor",0.242359846184983
+"Beginner/Nothing","Relatively Poor",0.0801754893452897
+"Recognition of 1-9","Relatively Poor",0.0987850737633787
+"Recognition of 10-99","Relatively Poor",0.151576511426092
+"Recognition of 100-200","Relatively Poor",0.194966734162569
+"Subtraction","Relatively Poor",0.188651046186482
+"Division","Relatively Poor",0.285845145116189
+"Beginner/Nothing","Relatively Rich",0.0751908953844657
+"Recognition of 1-9","Relatively Rich",0.112689071543213
+"Recognition of 10-99","Relatively Rich",0.157239433879675
+"Recognition of 100-200","Relatively Rich",0.192451729001508
+"Subtraction","Relatively Rich",0.186664072759107
+"Division","Relatively Rich",0.275764797432032
+"Beginner/Nothing","Rich",0.0551250258317834
+"Recognition of 1-9","Rich",0.0622545980574499
+"Recognition of 10-99","Rich",0.116036371151064
+"Recognition of 100-200","Rich",0.17431287456086
+"Subtraction","Rich",0.229902872494317
+"Division","Rich",0.362368257904526
