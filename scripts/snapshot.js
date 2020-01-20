@@ -103,6 +103,18 @@ d3.tsv("data/snapshot.tsv", function(error, data) {
 		.attr("height", function(d) { return yscale(d.yp0) - yscale(d.yp1); })
 		.style("fill", function(d) { return colors(d.response); });
 	
+	// write the percentages inside the rectangles
+	category.selectAll("text")
+		.data(function(d) { return d.responses; })
+		.enter().append("text")
+		.text(function(d) { return d3.format(",%")(d.yp1-d.yp0); })
+		.attr("y", function(d) { return yscale(d.yp0 + ((d.yp1-d.yp0)/2) - 0.02); })
+		.style("fill", function(d) { 
+			if (isNaN(d.yp0)){
+				return "white";
+			} else {return "#808000";}
+		});
+
 
 	// position the legend elements
 	var legendVals = ["Beginner", "Reads letters", "Reads words", "Reads sentences","Reads stories"] ;
