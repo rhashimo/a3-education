@@ -6,8 +6,33 @@ I moved the columns of interest to the front so the data can be easily visualize
 The columns of interest were renamed using the vlookup function to match headers in the dataset with the actual names in the variable name sheet. This was done to make data education indicators easily identifiable.
 
 Pivot tables were then used to provide a summary of the data. 
-The data was then converted to csv manually using Mac built-in CSV converter.
-The data was then added to files named "action-enrollment0", "action-enrollment1", "action-enrollment2", "action-enrollment3", "action-enrollment4".
+The data was then converted to csv using this formula
+
+import pandas
+
+excel_file = 'Final_Data.xls'
+df = pandas.read_excel(excel_file, sheet_name=None)
+xls = pandas.ExcelFile(excel_file)
+PC_sheets = []
+for sheet in xls.sheet_names:
+	PC_sheets.append(xls.parse(sheet))
+	PC = pandas.concat(PC_sheets)
+	PC.to_csv(f"action-enrollment_{0}.csv", encoding='utf-8', index=False)  
+  
+The data was then reformatted by pivoting some of the columns using this formula:
+
+import pandas
+
+excel_file = 'Final_Data.xls'
+df = pandas.read_excel(excel_file, sheet_name=None)
+xls = pandas.ExcelFile(excel_file)
+PC_sheets = []
+for sheet in xls.sheet_names:
+	PC_sheets.append(xls.parse(sheet))
+	PC = pandas.concat(PC_sheets)
+	PC.to_csv(f"action-enrollment_{0}.csv", encoding='utf-8', index=False)  
+
+
 These files were then read into the codes for D3.
 
 A map of Pakistan was created in Datawrapper to allow personas not familiar with Pakistan to quickly be able to visualize the different provinces represented, and to be to learn the student population in each province of Pakistan.
